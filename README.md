@@ -1,18 +1,14 @@
 # Rock Paper Scissors
 
-This project is designed to have you practice  using selection (if-else statements)
+This project is designed to have you practice  using selection (if-else statements), using user keyboard input, and displaying images.
 
-In completing this assignement, you will also learn how to load and display images.
+When the user presses 'r', 'p' or 's', the program should switch to the appropriate rock, paper, or scissors image. 
 
-The program should display the winner at the bottom of the screen.
+The program should also generate a random value for the computer choice, and switch the computer to that image.
 
-As soon as the user presses r, p or s, the program should switch to the appropriate rock, pape or scissors image. The program should also generate a random value for the computer choice, and switch the computer to that image.
+Finally, the program needs to use selection (conditional statements) to determine the winner and display an appropriate response at the bottom of the screen.
 
-Finally the program needs to determine who the winner is and generate an appropriate response at the bottom of the screen.
-
-For extra credit you can add a score tracker to keep track of wins, ties and losses.
-
-You could also expand the program to cover Rock Paper Scissors Lizzard Spock.
+For extra credit, you can add a score tracker to keep track of wins, ties and losses. You could also expand the program to cover Rock Paper Scissors Lizzard Spock.
 
 ## Grading
 
@@ -80,6 +76,7 @@ function draw() {
 
     // Call displayChoice for the player
     displayChoice(playerChoice, 100, 150);
+
     // Call displayChoice for the computer
     displayChoice(computerChoice, 350, 150);
 
@@ -89,33 +86,31 @@ function draw() {
 }
 
 function keyPressed(){
-    // TODO Use selection to set the playerChoice
-    // based on which key the user pressed.
-    // to 1 for rock, 2 for paper or 3 for 
-    // scissors.
+    // TODO Use selection to set the playerChoice based on which 
+    // key the user pressed. 1 for rock, 2 for paper, or 3 for scissors.
 
 
 
 
 
-    // TODO generate a random selection for 
-    // the computerChoice.
+    // TODO generate a random selection for the computerChoice.
 
 
 }
 
 function determineWinner(player, comp){
-    // Use conitional statements to generate a
+    // Use conditional statements to generate a
     // statement about who won.
     // Example "You win, rock crushes scissors"
     if( player < 1 || comp < 1){
         winStatement = "No winner yet."
     }
+
+
     // TODO Finish the determineWinner function
-    // It should compare player then update
+    // It should compare playerChoice to the computerChoice then update
     // winStatement appropriately
-    // Remember 1 is rock, 2 is paper and 
-    //     3 is scissors
+    // Remember 1 is rock, 2 is paper and 3 is scissors
     // The || symbol means OR
     // The && symbol means AND
 
